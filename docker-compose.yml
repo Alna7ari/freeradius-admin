@@ -24,7 +24,7 @@ services:
      - "./web/src:/var/www/html"
      - "./web/conf.d:/etc/nginx/conf.d"
     ports:
-      - "80:80"
+      - "808:808"
     restart: always
 
   php:
@@ -46,7 +46,7 @@ services:
       - PMA_USER=root
       - PMA_PASSWORD=password
     ports:
-      - "9200:80"
+      - "9200:808"
 
   radius:
     image: freeradius/freeradius-server:3.0.17
